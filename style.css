@@ -1,0 +1,899 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#08111f;
+color:#ffffff;
+overflow-x:hidden;
+
+}
+
+section{
+
+padding:100px 0;
+
+}
+
+.container{
+
+max-width:1200px;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+/* ==========================
+PRELOADER
+========================== */
+
+#preloader{
+
+position:fixed;
+width:100%;
+height:100%;
+background:#08111f;
+z-index:99999;
+
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar{
+
+background:rgba(8,17,31,.8);
+backdrop-filter:blur(15px);
+padding:15px 0;
+transition:.4s;
+
+}
+
+.navbar-brand{
+
+font-size:28px;
+font-weight:700;
+color:#4da3ff !important;
+
+}
+
+.nav-link{
+
+color:white !important;
+margin-left:20px;
+transition:.3s;
+
+}
+
+.nav-link:hover{
+
+color:#4da3ff !important;
+
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+
+background:linear-gradient(135deg,#08111f,#102a43);
+
+}
+
+.hero h4{
+
+font-size:24px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+font-weight:700;
+
+}
+
+.hero h1 span{
+
+color:#4da3ff;
+
+}
+
+.hero h3{
+
+font-size:30px;
+margin:20px 0;
+color:#4da3ff;
+
+}
+
+.hero p{
+
+font-size:18px;
+line-height:30px;
+margin-bottom:30px;
+
+}
+
+/* ==========================
+BUTTONS
+========================== */
+
+.btn-primary{
+
+background:#4da3ff;
+border:none;
+padding:12px 30px;
+border-radius:50px;
+transition:.4s;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(77,163,255,.4);
+
+}
+
+.btn-outline-light{
+
+border-radius:50px;
+padding:12px 30px;
+
+}
+
+/* ==========================
+PROFILE IMAGE
+========================== */
+
+.profile-img{
+
+width:370px;
+height:370px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid #4da3ff;
+box-shadow:0 0 40px rgba(77,163,255,.5);
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================
+SOCIAL ICONS
+========================== */
+
+.social-icons a{
+
+display:inline-flex;
+justify-content:center;
+align-items:center;
+
+width:50px;
+height:50px;
+
+background:#132238;
+
+color:white;
+
+border-radius:50%;
+
+margin-right:15px;
+
+transition:.4s;
+
+font-size:20px;
+
+}
+
+.social-icons a:hover{
+
+background:#4da3ff;
+transform:translateY(-8px);
+
+}
+
+/* ==========================
+SECTION TITLE
+========================== */
+
+.section-title h2{
+
+font-size:40px;
+font-weight:700;
+margin-bottom:15px;
+
+}
+
+.section-title p{
+
+color:#bbbbbb;
+
+}
+/* ==========================
+ABOUT
+========================== */
+
+.about{
+
+background:#0b1628;
+
+}
+
+.about-img{
+
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #4da3ff;
+box-shadow:0 0 30px rgba(77,163,255,.5);
+
+}
+
+.about h3{
+
+font-size:40px;
+font-weight:700;
+margin-bottom:10px;
+
+}
+
+.about h5{
+
+font-size:22px;
+margin-bottom:20px;
+
+}
+
+.about p{
+
+line-height:32px;
+color:#d6d6d6;
+
+}
+
+.about ul li{
+
+margin-bottom:15px;
+font-size:17px;
+
+}
+
+.about strong{
+
+color:#4da3ff;
+
+}
+
+/* ==========================
+EDUCATION
+========================== */
+
+.education{
+
+background:#08111f;
+
+}
+
+.timeline{
+
+position:relative;
+max-width:900px;
+margin:auto;
+
+}
+
+.timeline::before{
+
+content:'';
+position:absolute;
+left:50%;
+top:0;
+width:4px;
+height:100%;
+background:#4da3ff;
+transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+position:relative;
+width:50%;
+padding:20px;
+
+}
+
+.timeline-item:nth-child(odd){
+
+left:0;
+
+}
+
+.timeline-item:nth-child(even){
+
+left:50%;
+
+}
+
+.timeline-content{
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(15px);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+transition:.4s;
+
+}
+
+.timeline-content:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(77,163,255,.3);
+
+}
+
+.timeline-content h4{
+
+font-size:22px;
+margin-bottom:10px;
+color:#4da3ff;
+
+}
+
+.timeline-content p{
+
+color:#ddd;
+
+}
+
+.timeline-content span{
+
+display:block;
+margin-top:10px;
+color:#4da3ff;
+font-weight:600;
+
+}
+
+.timeline-content h6{
+
+margin-top:10px;
+
+}
+
+/* ==========================
+SKILLS
+========================== */
+
+.skills{
+
+background:#0b1628;
+
+}
+
+.skill-card{
+
+background:rgba(255,255,255,.07);
+
+backdrop-filter:blur(20px);
+
+padding:40px 20px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.5s;
+
+cursor:pointer;
+
+height:220px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 40px rgba(77,163,255,.35);
+
+}
+
+.skill-card i{
+
+font-size:60px;
+
+color:#4da3ff;
+
+margin-bottom:20px;
+
+transition:.5s;
+
+}
+
+.skill-card:hover i{
+
+transform:scale(1.2);
+
+}
+
+.skill-card h5{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ==========================
+COMMON CARD
+========================== */
+
+.project-card,
+.certificate-card{
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(15px);
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.5s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.project-card:hover,
+.certificate-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(77,163,255,.35);
+
+}
+/* ==========================
+PROJECTS
+========================== */
+
+.projects{
+background:#08111f;
+}
+
+.project-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.project-content{
+padding:30px;
+}
+
+.project-content h3{
+font-size:28px;
+margin-bottom:15px;
+color:#4da3ff;
+}
+
+.project-content p{
+line-height:30px;
+color:#d9d9d9;
+margin-bottom:20px;
+}
+
+.tech-stack .badge{
+margin-right:10px;
+padding:10px 18px;
+font-size:14px;
+border-radius:30px;
+}
+
+/* ==========================
+INTERNSHIPS
+========================== */
+
+.internships{
+
+background:#0b1628;
+
+}
+
+.internship-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:35px;
+
+border-radius:20px;
+
+height:100%;
+
+transition:.4s;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.internship-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(77,163,255,.35);
+
+}
+
+.internship-icon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+background:#4da3ff;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.internship-icon i{
+
+font-size:40px;
+
+color:white;
+
+}
+
+.internship-card h4{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+color:#4da3ff;
+
+}
+
+.internship-card h6{
+
+color:#fff;
+
+margin-bottom:15px;
+
+}
+
+.internship-card p{
+
+color:#d6d6d6;
+
+line-height:28px;
+
+}
+
+.internship-card ul{
+
+list-style:none;
+
+padding:0;
+
+margin-top:20px;
+
+text-align:left;
+
+}
+
+.internship-card ul li{
+
+margin-bottom:10px;
+
+color:#ddd;
+
+}
+
+.internship-card .btn{
+
+border-radius:30px;
+
+padding:10px 25px;
+
+margin-top:15px;
+
+}
+/* ==========================
+CERTIFICATES
+========================== */
+
+.certificate-card{
+
+background:rgba(255,255,255,.08);
+padding:35px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+height:100%;
+backdrop-filter:blur(12px);
+
+}
+
+.certificate-card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(77,163,255,.35);
+
+}
+
+.certificate-card a{
+
+text-decoration:none;
+color:#fff;
+
+}
+
+.certificate-card button{
+
+border-radius:30px;
+
+}
+/* ==========================
+CONTACT
+========================== */
+
+.contact{
+background:#0b1628;
+}
+
+.contact h3{
+margin-bottom:25px;
+}
+
+.contact p{
+font-size:18px;
+margin-bottom:18px;
+}
+
+.contact i{
+color:#4da3ff;
+margin-right:12px;
+}
+
+.form-control{
+
+background:#132238;
+border:none;
+color:white;
+padding:15px;
+
+}
+
+.form-control:focus{
+
+background:#132238;
+color:white;
+border:1px solid #4da3ff;
+box-shadow:none;
+
+}
+
+textarea{
+
+resize:none;
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+.footer{
+
+background:#050b15;
+padding:50px 0;
+text-align:center;
+
+}
+
+.footer h3{
+
+font-size:32px;
+color:#4da3ff;
+margin-bottom:15px;
+
+}
+
+.footer p{
+
+color:#bbbbbb;
+
+}
+
+.footer .social-icons{
+
+margin:20px 0;
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+.hero{
+text-align:center;
+padding-top:120px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero h3{
+font-size:24px;
+}
+
+.profile-img{
+width:280px;
+height:280px;
+margin-top:40px;
+}
+
+.about{
+text-align:center;
+}
+
+.about-img{
+margin-bottom:30px;
+}
+
+.timeline::before{
+left:20px;
+}
+
+.timeline-item{
+width:100%;
+left:0 !important;
+padding-left:60px;
+margin-bottom:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.section-title h2{
+font-size:32px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.profile-img{
+width:230px;
+height:230px;
+}
+
+.skill-card{
+
+margin-bottom:25px;
+
+}
+
+.project-content h3{
+
+font-size:22px;
+
+}
+
+}
+
+/* ==========================
+SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#4da3ff;
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#08111f;
+
+}
